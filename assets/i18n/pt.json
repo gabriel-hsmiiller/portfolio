@@ -1,0 +1,91 @@
+{
+    "home": {
+        "firstSection": {
+            "greetings": "Olá, eu sou Gabriel Miiller",
+            "title": "Desenvolvedor & Designer brasileiro"
+        },
+        "secondSection": {
+            "brazilian": "Brasileiro",
+            "yearsOld": "22 anos",
+            "frontEndDesign": "Front-end & Design",
+            "greetings": "Opa!",
+            "letter": "Como eu disse, meu nome é Gabriel Miiller e sou um designer e desenvolvedor front-end. Trabalho com TI desde 2019 e sou graduado em Análise e Desenvolvimento de Sistemas pela Fatec Campinas. Amo criar protótipos por diversão e construir sites incríveis, sempre evoluindo as minhas habilidades e adquirindo novos conhecimentos."
+        },
+        "thirdSection": {
+            "hardSkills": "Hard skills",
+            "softSkills": "Soft skills",
+            "languages": "Idiomas",
+            "tooltips": {
+                "communication": "Comunicação",
+                "teaching": "Ensinar",
+                "teamWork": "Trabalho em equipe",
+                "english": "Inglês",
+                "portuguese": "Português",
+                "spanish": "Espanhol"
+            }
+        },
+        "fourthSection": {
+            "sectionTitle": "Experiência e formação acadêmica",
+            "education": {
+                "itTechnician": {
+                    "formation": "Técnico em Informática",
+                    "institute": "Etec Polivalente de Americana",
+                    "period": "2016-2018"
+                },
+                "ADS": {
+                    "formation": "Análise e Desenvolvimento de Sistemas",
+                    "institute": "Fatec Campinas",
+                    "period": "2019-2022"
+                }
+            },
+            "experience": {
+                "onApp": {
+                    "company": "Online Applications",
+                    "position": "Estagiário em Desenvolvimento",
+                    "period": "2019-2020"
+                },
+                "ootb": {
+                    "company": "Out Off The Box",
+                    "position": "Desenvolvedor Front-end JR.",
+                    "period": "2020-2021"
+                },
+                "hausz": {
+                    "company": "Hausz Brasil",
+                    "position": "Desenvolvedor Front-end",
+                    "period": "2021"
+                },
+                "eld": {
+                    "company": "Instituto de Pesquisa Eldorado",
+                    "position": "Desnvolvedor Full-stack",
+                    "period": "2021-Atualmente"
+                }
+            }
+        }
+    },
+    "portfolio": {
+
+    },
+    "contact": {
+        "items": {
+            "phone": "Telefone",
+            "email": "E-mail",
+            "github": "Github",
+            "linkedin": "Linkedin"
+        },
+        "form": {
+            "useForm": "Ou preencha o formulário abaixo",
+            "name": "Nome",
+            "email": "E-mail",
+            "subject": "Assunto",
+            "message": "Menssagem",
+            "send": "Enviar"
+        },
+        "thanks": "Obrigado pelo contato!",
+        "sent": "Mensagem enviada com sucesso!"
+    },
+    "header": {
+        "home": "Home",
+        "portfolio": "Portfólio",
+        "contact": "Contato"
+    }
+}
