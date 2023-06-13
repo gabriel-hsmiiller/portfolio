@@ -10,7 +10,7 @@ import { RiBook2Fill } from 'react-icons/ri';
 
 import { StyledHome } from "./style";
 import mainPicture from '../../assets/img/main-picture.svg'
-import { useTranslate } from '../../src/utils/use-i18n.util';
+import { useTranslate } from '../../src/utils/use-translate.util';
 import { useRef } from 'react';
 import { ArrowUpward } from '@mui/icons-material';
 import Translate from '../../src/components/translate';
@@ -182,33 +182,33 @@ function Home() {
                     <div className='education-experience-item'>
                         <MdWork size={40} />
                         <div>
-                            <h3><Translate value="home.fourthSection.education.onApp.company" /></h3>
-                            <Translate value="home.fourthSection.education.onApp.position" /><br/>
-                            <Translate value="home.fourthSection.education.onApp.period" />
+                            <h3><Translate value="home.fourthSection.experience.onApp.company" /></h3>
+                            <Translate value="home.fourthSection.experience.onApp.position" /><br/>
+                            <Translate value="home.fourthSection.experience.onApp.period" />
                         </div>
                     </div>
                     <div className='education-experience-item'>
                         <MdWork size={40} />
                         <div>
-                            <h3><Translate value="home.fourthSection.education.ootb.company" /></h3>
-                            <Translate value="home.fourthSection.education.ootb.position" /><br/>
-                            <Translate value="home.fourthSection.education.ootb.period" />
+                            <h3><Translate value="home.fourthSection.experience.ootb.company" /></h3>
+                            <Translate value="home.fourthSection.experience.ootb.position" /><br/>
+                            <Translate value="home.fourthSection.experience.ootb.period" />
                         </div>
                     </div>
                     <div className='education-experience-item'>
                         <MdWork size={40} />
                         <div>
-                            <h3><Translate value="home.fourthSection.education.hausz.company" /></h3>
-                            <Translate value="home.fourthSection.education.hausz.position" /><br/>
-                            <Translate value="home.fourthSection.education.hausz.period" />
+                            <h3><Translate value="home.fourthSection.experience.hausz.company" /></h3>
+                            <Translate value="home.fourthSection.experience.hausz.position" /><br/>
+                            <Translate value="home.fourthSection.experience.hausz.period" />
                         </div>
                     </div>
                     <div className='education-experience-item'>
                         <MdWork size={40} />
                         <div>
-                            <h3><Translate value="home.fourthSection.education.eld.company" /></h3>
-                            <Translate value="home.fourthSection.education.eld.position" /><br/>
-                            <Translate value="home.fourthSection.education.eld.period" />
+                            <h3><Translate value="home.fourthSection.experience.eld.company" /></h3>
+                            <Translate value="home.fourthSection.experience.eld.position" /><br/>
+                            <Translate value="home.fourthSection.experience.eld.period" />
                         </div>
                     </div>
                 </div>

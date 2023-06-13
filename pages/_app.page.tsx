@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import Root from ".";
+import Root from "./index.page";
 import { CSSReset } from "../src/components/css-reset";
 import LanguageModeProvider, { LanguageModeEnum } from "../src/components/header/components/language-mode";
 import { ThemeProvider } from "styled-components";

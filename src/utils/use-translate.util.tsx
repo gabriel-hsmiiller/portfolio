@@ -6,9 +6,9 @@ import React from "react";
 
 export function useTranslate(key: string) {
     const languageContext = React.useContext(LanguageModeContext)
-    const [value, setValue] = React.useState('');
     let obj: Object | string;
     const propertyTree = key.split('.');
+    let value;
 
     switch(languageContext.mode) {
         case LanguageModeEnum.ENGLISH:
@@ -32,10 +32,10 @@ export function useTranslate(key: string) {
 
         if (typeof obj !== 'string') continue;
 
-        setValue(obj);
+        value = obj;
     }
 
-    if (!value) setValue(key);
+    if (!value) value = key;
 
     return value;
 }

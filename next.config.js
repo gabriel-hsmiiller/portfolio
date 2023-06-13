@@ -9,8 +9,10 @@ const nextConfig = {
         SUPABASE_URL: process.env.SUPABASE_URL,
         SUPABASE_API_KEY: process.env.SUPABASE_API_KEY
     },
-    pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
-    ignoreDuringBuilds: true,
+    pageExtensions: ['page.jsx', 'page.js', 'page.tsx', 'page.ts'],
+    eslint: {
+        ignoreDuringBuilds: true,
+    },
 }
 
 module.exports = nextConfig;

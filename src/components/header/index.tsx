@@ -9,8 +9,7 @@ import { LanguageModeContext, LanguageModeEnum } from './components/language-mod
 import flagUnitedStates from '../../../assets/img/flag-united-states.svg';
 import flagSpain from '../../../assets/img/flag-spain.svg';
 import flagBrazil from '../../../assets/img/flag-brazil.svg';
-import { useTranslate } from '../../utils/use-i18n.util';
-import Translate from '../translate';
+import { useTranslate } from '../../utils/use-translate.util';
 
 export default function Header() {
     const router = useRouter();
@@ -52,9 +51,9 @@ export default function Header() {
                 </div>
             </div>
             <div className='navigation'>
-                <Link href="/home" className={router.asPath === '' || router.asPath === '/home' ? 'selected' : ''}><Translate value="header.home" /></Link>
-                <Link href="/portfolio" className={router.asPath === '/portfolio' ? 'selected' : ''}><Translate value="header.portfolio" /></Link>
-                <Link href="/contact" className={router.asPath === '/contact' ? 'selected' : ''}><Translate value="header.contact" /></Link>
+                <Link href="/home" className={router.asPath === '' || router.asPath === '/home' ? 'selected' : ''}>{useTranslate("header.home")}</Link>
+                <Link href="/portfolio" className={router.asPath === '/portfolio' ? 'selected' : ''}>{useTranslate("header.portfolio")}</Link>
+                <Link href="/contact" className={router.asPath === '/contact' ? 'selected' : ''}>{useTranslate("header.contact")}</Link>
             </div>
         </StyledHeader>
     )

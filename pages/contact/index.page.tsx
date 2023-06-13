@@ -1,6 +1,6 @@
 import { Close, GitHub, LinkedIn, Mail, Phone } from "@mui/icons-material";
 import { StyledContact } from "./style";
-import { useTranslate } from "../../src/utils/use-i18n.util";
+import { useTranslate } from "../../src/utils/use-translate.util";
 import { useForm } from "../../src/utils/use-form";
 import { IContact } from '../../src/models/contact';
 import { contactService } from "../../src/services/contact-service";

@@ -1,4 +1,4 @@
-import { useTranslate } from "../../utils/use-i18n.util";
+import { useTranslate } from "../../utils/use-translate.util";
 
 export default function Translate(props: any) {
     const value = useTranslate(props.value);
