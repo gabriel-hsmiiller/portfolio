@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const StyledPortfolio = styled.section`
+export const StyledPortfolio = styled.section<any>`
     margin: 120px 20vw;
     width: 60vw;
     justify-content: center;

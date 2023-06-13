@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledHeader = styled.header`
+export const StyledHeader = styled.header<any>`
     max-width: 100vw;
     padding: 40px;
     display: flex;

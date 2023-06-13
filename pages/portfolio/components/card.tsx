@@ -34,7 +34,7 @@ export default function Card(props: any) {
     );
 }
 
-const StyledCard = styled.article`
+const StyledCard = styled.article<any>`
     display: flex;
     flex-direction: column;
     align-items: stretch;

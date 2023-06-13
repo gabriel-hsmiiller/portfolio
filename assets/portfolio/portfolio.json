@@ -1,12 +1,12 @@
 {
     "items": [
         {
-            "name": "",
+            "name": "Portfolio",
             "figma": "",
-            "github": "",
+            "github": "https://github.com/gabriel-hsmiiller/portfolio",
             "live": "",
             "image": "",
-            "platform": ""
+            "platform": "web"
         }
     ]
 }
