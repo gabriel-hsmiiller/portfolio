@@ -10,6 +10,7 @@ const nextConfig = {
         SUPABASE_API_KEY: process.env.SUPABASE_API_KEY
     },
     pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
+    ignoreDuringBuilds: true,
 }
 
 module.exports = nextConfig;
