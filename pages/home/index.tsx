@@ -8,7 +8,7 @@ import { FaChalkboardTeacher } from 'react-icons/fa';
 import { MdGroup, MdWork } from 'react-icons/md';
 import { RiBook2Fill } from 'react-icons/ri';
 
-import { StyledHome } from "./styles";
+import { StyledHome } from "./style";
 import mainPicture from '../../assets/img/main-picture.svg'
 import { translate } from '../../src/utils/i18n.util';
 import { useRef } from 'react';

@@ -1,7 +1,7 @@
 import { IPortfolioItem } from "../../src/models/portfolio-item";
 import { PortfolioService } from "../../src/services/portfolio-service";
 import Card from "./components/card";
-import { StyledPortfolio } from "./styles";
+import { StyledPortfolio } from "./style";
 
 function Portfolio() {
     const portfolioService = PortfolioService();
