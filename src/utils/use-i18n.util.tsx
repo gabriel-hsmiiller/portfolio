@@ -4,10 +4,9 @@ import es from '../../assets/i18n/es.json';
 import pt from '../../assets/i18n/pt.json';
 import React from "react";
 
-export function translate(key: string) {
+export function useTranslate(key: string) {
     const languageContext = React.useContext(LanguageModeContext)
-
-    let value = "";
+    const [value, setValue] = React.useState('');
     let obj: Object | string;
     const propertyTree = key.split('.');
 
@@ -33,10 +32,10 @@ export function translate(key: string) {
 
         if (typeof obj !== 'string') continue;
 
-        value = obj;
+        setValue(obj);
     }
 
-    if (!value) value = key;
+    if (!value) setValue(key);
 
     return value;
 }

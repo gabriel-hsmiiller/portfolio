@@ -10,7 +10,7 @@ import { RiBook2Fill } from 'react-icons/ri';
 
 import { StyledHome } from "./style";
 import mainPicture from '../../assets/img/main-picture.svg'
-import { translate } from '../../src/utils/i18n.util';
+import { useTranslate } from '../../src/utils/use-i18n.util';
 import { useRef } from 'react';
 import { ArrowUpward } from '@mui/icons-material';
 
@@ -29,8 +29,8 @@ function Home() {
             </div>
             <div className="face" ref={topRef}>
                 <Image src={mainPicture} alt='Main picture' />
-                <h1>{translate('home.firstSection.greetings')}</h1>
-                <h2>{translate('home.firstSection.title')}</h2>
+                <h1>{useTranslate('home.firstSection.greetings')}</h1>
+                <h2>{useTranslate('home.firstSection.title')}</h2>
                 <div className="arrow-container" onClick={() => scrollToView(commonInformationViewRef)}>
                     <ArrowDownwardIcon sx={{ color: '#7E57C2', fontSize: 32 }} />
                 </div>
@@ -38,18 +38,18 @@ function Home() {
             <hr />
             <div className="common-informations" ref={commonInformationViewRef}>
                 <h2>
-                    <span>{translate('home.secondSection.brazilian')}</span>
+                    <span>{useTranslate('home.secondSection.brazilian')}</span>
                     <FiberManualRecordIcon sx={{ fontSize: 8 }} />
-                    <span>{translate('home.secondSection.yearsOld')}</span>
+                    <span>{useTranslate('home.secondSection.yearsOld')}</span>
                     <FiberManualRecordIcon sx={{ fontSize: 8 }} />
-                    <span>{translate('home.secondSection.frontEndDesign')}</span>
+                    <span>{useTranslate('home.secondSection.frontEndDesign')}</span>
                 </h2>
                 <div className='letter-container'>
-                    <h3>{translate('home.secondSection.greetings')}</h3>
-                    <article>{translate('home.secondSection.letter')}</article>
+                    <h3>{useTranslate('home.secondSection.greetings')}</h3>
+                    <article>{useTranslate('home.secondSection.letter')}</article>
                 </div>
 
-                <h2>{translate('home.thirdSection.hardSkills')}</h2>
+                <h2>{useTranslate('home.thirdSection.hardSkills')}</h2>
                 <div className='skill-gauges-container'>
                     <div className="skill-gauges" title="Angular">
                         <div className="skill-gauges-range" style={{transform: 'rotateZ(-45deg)'}}>
@@ -102,9 +102,9 @@ function Home() {
                     </div>
                 </div>
 
-                <h2>{translate('home.thirdSection.softSkills')}</h2>
+                <h2>{useTranslate('home.thirdSection.softSkills')}</h2>
                 <div className='skill-gauges-container'>
-                    <div className="skill-gauges" title={translate('home.thirdSection.tooltips.communication')}>
+                    <div className="skill-gauges" title={useTranslate('home.thirdSection.tooltips.communication')}>
                         <div className="skill-gauges-range-medium" style={{transform: 'rotateZ(-180deg)'}}>
                             <div className='skill-gauges-mask' style={{transform: 'rotateZ(180deg)'}}>
                                 <SlSpeech size={48} />
@@ -112,7 +112,7 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className="skill-gauges" title={translate('home.thirdSection.tooltips.teaching')}>
+                    <div className="skill-gauges" title={useTranslate('home.thirdSection.tooltips.teaching')}>
                         <div className="skill-gauges-range" style={{transform: 'rotateZ(-90deg)'}}>
                             <div className='skill-gauges-mask' style={{transform: 'rotateZ(90deg)'}}>
                                 <FaChalkboardTeacher size={48} />
@@ -120,7 +120,7 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className="skill-gauges" title={translate('home.thirdSection.tooltips.teamWork')}>
+                    <div className="skill-gauges" title={useTranslate('home.thirdSection.tooltips.teamWork')}>
                         <div className="skill-gauges-range" style={{transform: 'rotateZ(-45deg)'}}>
                             <div className='skill-gauges-mask' style={{transform: 'rotateZ(45deg)'}}>
                                 <MdGroup size={48} />
@@ -129,9 +129,9 @@ function Home() {
                     </div>
                 </div>
 
-                <h2>{translate('home.thirdSection.languages')}</h2>
+                <h2>{useTranslate('home.thirdSection.languages')}</h2>
                 <div className='skill-gauges-container'>
-                    <div className="skill-gauges" title={translate('home.thirdSection.tooltips.english')}>
+                    <div className="skill-gauges" title={useTranslate('home.thirdSection.tooltips.english')}>
                         <div className="skill-gauges-range" style={{transform: 'rotateZ(-45deg)'}}>
                             <div className='skill-gauges-mask' style={{transform: 'rotateZ(45deg)'}}>
                                 <span className='skill-language'>EN</span>
@@ -139,7 +139,7 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className="skill-gauges" title={translate('home.thirdSection.tooltips.portuguese')}>
+                    <div className="skill-gauges" title={useTranslate('home.thirdSection.tooltips.portuguese')}>
                         <div className="skill-gauges-range">
                             <div className='skill-gauges-mask'>
                                 <span className='skill-language'>PT</span>
@@ -147,7 +147,7 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className="skill-gauges" title={translate('home.thirdSection.tooltips.spanish')}>
+                    <div className="skill-gauges" title={useTranslate('home.thirdSection.tooltips.spanish')}>
                         <div className="skill-gauges-range-medium" style={{transform: 'rotateZ(-180deg)'}}>
                             <div className='skill-gauges-mask' style={{transform: 'rotateZ(180deg)'}}>
                                 <span className='skill-language'>ES</span>
@@ -158,22 +158,22 @@ function Home() {
             </div>
             <hr />
             <div className="education-experience">
-                <h2>{translate('home.fourthSection.sectionTitle')}</h2>
+                <h2>{useTranslate('home.fourthSection.sectionTitle')}</h2>
                 <div className='education'>
                     <div className='education-experience-item'>
                         <RiBook2Fill size={40} />
                         <div>
-                            <h3>{translate('home.fourthSection.education.itTechnician.formation')}</h3>
-                            <span>{translate('home.fourthSection.education.itTechnician.institute')}</span><br/>
-                            <span>{translate('home.fourthSection.education.itTechnician.period')}</span>
+                            <h3>{useTranslate('home.fourthSection.education.itTechnician.formation')}</h3>
+                            <span>{useTranslate('home.fourthSection.education.itTechnician.institute')}</span><br/>
+                            <span>{useTranslate('home.fourthSection.education.itTechnician.period')}</span>
                         </div>
                     </div>
                     <div className='education-experience-item'>
                         <RiBook2Fill size={40} />
                         <div>
-                            <h3>{translate('home.fourthSection.education.ADS.formation')}</h3>
-                            <span>{translate('home.fourthSection.education.ADS.institute')}</span><br/>
-                            <span>{translate('home.fourthSection.education.ADS.period')}</span>
+                            <h3>{useTranslate('home.fourthSection.education.ADS.formation')}</h3>
+                            <span>{useTranslate('home.fourthSection.education.ADS.institute')}</span><br/>
+                            <span>{useTranslate('home.fourthSection.education.ADS.period')}</span>
                         </div>
                     </div>
                 </div>
@@ -181,33 +181,33 @@ function Home() {
                     <div className='education-experience-item'>
                         <MdWork size={40} />
                         <div>
-                            <h3>{translate('home.fourthSection.experience.onApp.company')}</h3>
-                            <span>{translate('home.fourthSection.experience.onApp.position')}</span><br/>
-                            <span>{translate('home.fourthSection.experience.onApp.period')}</span>
+                            <h3>{useTranslate('home.fourthSection.experience.onApp.company')}</h3>
+                            <span>{useTranslate('home.fourthSection.experience.onApp.position')}</span><br/>
+                            <span>{useTranslate('home.fourthSection.experience.onApp.period')}</span>
                         </div>
                     </div>
                     <div className='education-experience-item'>
                         <MdWork size={40} />
                         <div>
-                            <h3>{translate('home.fourthSection.experience.ootb.company')}</h3>
-                            <span>{translate('home.fourthSection.experience.ootb.position')}</span><br/>
-                            <span>{translate('home.fourthSection.experience.ootb.period')}</span>
+                            <h3>{useTranslate('home.fourthSection.experience.ootb.company')}</h3>
+                            <span>{useTranslate('home.fourthSection.experience.ootb.position')}</span><br/>
+                            <span>{useTranslate('home.fourthSection.experience.ootb.period')}</span>
                         </div>
                     </div>
                     <div className='education-experience-item'>
                         <MdWork size={40} />
                         <div>
-                            <h3>{translate('home.fourthSection.experience.hausz.company')}</h3>
-                            <span>{translate('home.fourthSection.experience.hausz.position')}</span><br/>
-                            <span>{translate('home.fourthSection.experience.hausz.period')}</span>
+                            <h3>{useTranslate('home.fourthSection.experience.hausz.company')}</h3>
+                            <span>{useTranslate('home.fourthSection.experience.hausz.position')}</span><br/>
+                            <span>{useTranslate('home.fourthSection.experience.hausz.period')}</span>
                         </div>
                     </div>
                     <div className='education-experience-item'>
                         <MdWork size={40} />
                         <div>
-                            <h3>{translate('home.fourthSection.experience.eld.company')}</h3>
-                            <span>{translate('home.fourthSection.experience.eld.position')}</span><br/>
-                            <span>{translate('home.fourthSection.experience.eld.period')}</span>
+                            <h3>{useTranslate('home.fourthSection.experience.eld.company')}</h3>
+                            <span>{useTranslate('home.fourthSection.experience.eld.position')}</span><br/>
+                            <span>{useTranslate('home.fourthSection.experience.eld.period')}</span>
                         </div>
                     </div>
                 </div>
