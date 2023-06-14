@@ -13,7 +13,7 @@ function Portfolio() {
                 portFolioItems.map((item, index) => {
 
                     return (
-                        <Card key={index} item={item} />
+                        <Card key={index} item={item} id={index} />
                     )
                 })
             }
