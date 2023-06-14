@@ -55,11 +55,20 @@ const StyledCard = styled.article<any>`
     .card-info {
         display: flex;
         justify-content: center;
+        align-items: center;
         position: relative;
         margin-bottom: 20px;
 
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+
         > .card-title {
             font-size: 24px;
+            
+            @media screen and (max-width: 768px) {
+                font-size: 18px;
+            }
         }
 
         > a {

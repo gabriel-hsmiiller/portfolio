@@ -28,10 +28,19 @@ export const StyledHome = styled.section`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media screen and (max-width: 768px) {
+            height: 100vh;
+        }
+    }
+
+    .face > .face-image {
+        max-width: 80vw;
     }
 
     .face h1, .face h2 {
         font-weight: 400;
+        text-align: center;
     }
 
     .face h1 {
@@ -71,10 +80,18 @@ export const StyledHome = styled.section`
         align-items: center;
         margin: 60px auto;
         font-size: 32px;
+        
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     .common-informations > h2 > svg {
         margin: 0 24px;
+        
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
 
     .common-informations .letter-container > h3 {
@@ -85,6 +102,10 @@ export const StyledHome = styled.section`
     .common-informations .letter-container article {
         font-size: 20px;
         max-width: 640px;
+        
+        @media screen and (max-width: 768px) {
+            max-width: 90vw;
+        }
     }
 
     .skill-gauges-container {
@@ -92,6 +113,8 @@ export const StyledHome = styled.section`
         gap: 40px;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+        margin: auto 5vw;
     }
 
     .skill-gauges {
@@ -150,8 +173,6 @@ export const StyledHome = styled.section`
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 640px;
-        width: 80vw;
     }
 
     .education, .experience {

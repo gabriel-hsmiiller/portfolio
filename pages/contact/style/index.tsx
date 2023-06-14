@@ -10,10 +10,16 @@ export const StyledContact = styled.section`
     .contact-links {
         display: flex;
         align-items: center;
+        justify-content: center;
         column-gap: 160px;
         row-gap: 20px;
         flex-wrap: wrap;
         margin-bottom: 40px;
+
+        @media screen and (max-width: 768px) {
+            margin: auto 10vw 10vw 40px;
+            column-gap: 80px;
+        }
 
         & .contact-item {
             font-family: 'Inter', sans-serif;
@@ -40,13 +46,23 @@ export const StyledContact = styled.section`
                 max-width: 660px;
                 width: 80vw;
                 margin: 40px 10vw 20px 10vw;
-                grid-template-columns: auto auto;
+                grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: 32px 32px 160px;
                 column-gap: 20px;
                 row-gap: 16px;
 
+                @media screen and (max-width: 768px) {
+                    height: 304px;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: 32px 32px 32px 160px;
+                }
+
                 .grid-item-span {
                     grid-column: 1 / 3;
+                    
+                    @media screen and (max-width: 768px) {
+                        grid-column: inherit;
+                    }
                 }
 
                 input, textarea {
@@ -79,6 +95,7 @@ export const StyledContact = styled.section`
 
     h3 {
         font-size: 24px;
+        margin: 50px auto;
     }
 
     .contact-sent-toast {

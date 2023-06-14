@@ -20,6 +20,7 @@ export default function _App(props) {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='anonymous' />
                 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif&display=swap" rel="stylesheet" />
+                <link rel="shortcut icon" href="/favicon.ico" />
             </Helmet>
             <ThemeProvider theme={{}}>
                 <CSSReset />

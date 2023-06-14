@@ -5,12 +5,14 @@ export const StyledHeader = styled.header<any>`
     padding: 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 16px;
     background-image: linear-gradient(180deg, rgba(126, 87, 194, 0.3), rgba(0,0,0,0));
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
 
     .language-mode {
         display: flex;
@@ -57,7 +59,12 @@ export const StyledHeader = styled.header<any>`
     .navigation {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         gap: 60px;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
     }
 
     .navigation > a {
@@ -67,6 +74,60 @@ export const StyledHeader = styled.header<any>`
     }
 
     .navigation > a.selected {
+        color: white;
+        font-weight: 700;
+        transition: all ease-out .5s;
+    }
+
+    .navigation-mobile-hamburger {
+        display: none;
+        
+        & > button {
+            background: none;
+            border: none;
+            outline: none;
+            color: white;
+        }
+        
+        @media screen and (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+`;
+
+export const StyledMenu = styled.nav<any>`
+    .navigation-mobile {
+        position: fixed;
+        bottom: 0;
+        top: 100px;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        display: none;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+
+        background-color: rgba(40, 40, 40, 0.9);
+
+        &.open {
+            display: flex;
+        }
+
+        @media screen and (max-width: 768px) { }
+    }
+
+    .navigation-mobile > a {
+        color: #f0f0f0;
+        transition: all ease-out .5s;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .navigation-mobile > a.selected {
         color: white;
         font-weight: 700;
         transition: all ease-out .5s;

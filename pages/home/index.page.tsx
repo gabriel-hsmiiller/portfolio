@@ -29,7 +29,7 @@ function Home() {
                 <ArrowUpward sx={{ color: '#2A2A2A', fontSize: 40 }} />
             </div>
             <div className="face" ref={topRef}>
-                <Image src={mainPicture} alt='Main picture' />
+                <Image src={mainPicture} alt='Main picture' className="face-image" />
                 <h1><Translate value="home.firstSection.greetings" /></h1>
                 <h2><Translate value="home.firstSection.title" /></h2>
                 <div className="arrow-container" onClick={() => scrollToView(commonInformationViewRef)}>

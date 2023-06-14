@@ -4,8 +4,24 @@
             "name": "Portfolio",
             "figma": "",
             "github": "https://github.com/gabriel-hsmiiller/portfolio",
-            "live": "",
-            "image": "",
+            "live": "https://miiller-gabriel.vercel.app/",
+            "image": "portfolio.jpeg",
+            "platform": "web"
+        },
+        {
+            "name": "Portfolio",
+            "figma": "",
+            "github": "https://github.com/gabriel-hsmiiller/portfolio",
+            "live": "https://miiller-gabriel.vercel.app/",
+            "image": "portfolio.jpeg",
+            "platform": "web"
+        },
+        {
+            "name": "Portfolio",
+            "figma": "",
+            "github": "https://github.com/gabriel-hsmiiller/portfolio",
+            "live": "https://miiller-gabriel.vercel.app/",
+            "image": "portfolio.jpeg",
             "platform": "web"
         }
     ]
