@@ -211,6 +211,14 @@ function Home() {
                             <Translate value="home.fourthSection.experience.eld.period" />
                         </div>
                     </div>
+                    <div className='education-experience-item'>
+                        <MdWork size={40} />
+                        <div>
+                            <h3><Translate value="home.fourthSection.experience.ciandt.company" /></h3>
+                            <Translate value="home.fourthSection.experience.ciandt.position" /><br/>
+                            <Translate value="home.fourthSection.experience.ciandt.period" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </StyledHome>

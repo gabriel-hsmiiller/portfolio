@@ -2,10 +2,34 @@
     "items": [
         {
             "name": "Portfolio",
-            "figma": "",
+            "figma": "https://www.figma.com/file/WzoBqzqOwkqgCnjBRtwLEg/Web-Resume?type=design&mode=design&t=2Bf80JZPQ5o8HLH5-1",
             "github": "https://github.com/gabriel-hsmiiller/portfolio",
             "live": "https://miiller-gabriel.vercel.app/",
             "image": "portfolio.jpeg",
+            "platform": "web"
+        },
+        {
+            "name": "Musicomm",
+            "figma": "https://www.figma.com/file/SK2f1MM5GPV2lSZHumLehf/Musicomm?type=design&mode=design&t=2Bf80JZPQ5o8HLH5-1",
+            "github": "",
+            "live": "",
+            "image": "musicomm.png",
+            "platform": "web"
+        },
+        {
+            "name": "Jobbox",
+            "figma": "https://www.figma.com/file/GVFEtQWU4rekkEuJ4mhKgU/Jobbox?type=design&mode=design&t=2Bf80JZPQ5o8HLH5-1",
+            "github": "",
+            "live": "",
+            "image": "jobbox.png",
+            "platform": "web"
+        },
+        {
+            "name": "Shyvana's Fake Landing Page",
+            "figma": "https://www.figma.com/file/SeH5vgoUWKnn2PVWCOIvuF/Fake-Landing-Page-1---Shyvana?type=design&mode=design&t=2Bf80JZPQ5o8HLH5-1",
+            "github": "",
+            "live": "",
+            "image": "shyvana.png",
             "platform": "web"
         }
     ]
