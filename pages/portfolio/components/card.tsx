@@ -13,21 +13,21 @@ export default function Card(props: any) {
                 <span className="card-title">{item.name.substring(0, 20)}{item.name.length > 20 ? '...' : ''}</span>
                 {
                     item.figma &&
-                    <Link href={item.figma}>
+                    <a href={item.figma} target="_blank">
                         <SiFigma size={20} />
-                    </Link>
+                    </a>
                 }
                 {
                     item.github &&
-                    <Link href={item.github}>
+                    <a href={item.github} target="_blank">
                         <SiGithub size={20} />
-                    </Link>
+                    </a>
                 }
                 {
                     item.live &&
-                    <Link href={item.live}>
+                    <a href={item.live} target="_blank">
                         <RiLink size={20} />
-                    </Link>
+                    </a>
                 }
             </div>
         </StyledCard>
